@@ -30,7 +30,7 @@ exec --no-startup-id diodon
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id picom  --experimental-backends --animations --animation-for-open-window fly-in
+exec --no-startup-id picom  -b --experimental-backends --animations --animation-for-open-window fly-in
 exec --no-startup-id /home/amirreza-ghorbanian/Downloads/conky-ubuntu-24.04-x86_64-v1.22.1.AppImage
 exec --no-startup-id ~/.config/i3/usage.sh $USR $PAS
 # NetworkManager is the most popular way to manage wireless networks on Linux,
