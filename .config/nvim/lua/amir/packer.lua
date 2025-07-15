@@ -5,7 +5,17 @@ vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
 	-- Packer can manage itself
-
+	use({
+		"rmagatti/auto-session",
+		config = function()
+			require("auto-session").setup({
+				suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+				git_use_branch_name = true,
+				git_auto_restore_on_branch_change = true,
+				cwd_change_handling = true,
+			})
+		end,
+	})
 	use("wbthomason/packer.nvim")
 	use("wakatime/vim-wakatime")
 	use("karb94/neoscroll.nvim")

@@ -79,6 +79,12 @@ _G.packer_plugins = {
     path = "/home/amirreza-ghorbanian/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-session"] = {
+    config = { "\27LJ\2\nä\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\20suppressed_dirs\1\0\1\20suppressed_dirs\0\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\nsetup\17auto-session\frequire\0" },
+    loaded = true,
+    path = "/home/amirreza-ghorbanian/.local/share/nvim/site/pack/packer/start/auto-session",
+    url = "https://github.com/rmagatti/auto-session"
+  },
   catppuccin = {
     loaded = true,
     path = "/home/amirreza-ghorbanian/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -280,6 +286,10 @@ time([[Setup for markdown-preview.nvim]], false)
 time([[Config for orgmode]], true)
 try_loadstring("\27LJ\2\n∫\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21org_agenda_files\1\0\2\21org_agenda_files\0\27org_default_notes_file\29~/Dropbox/org/refile.org\1\3\0\0\20~/Dropbox/org/*\19~/my-orgs/**/*\nsetup\forgmode\frequire\0", "config", "orgmode")
 time([[Config for orgmode]], false)
+-- Config for: auto-session
+time([[Config for auto-session]], true)
+try_loadstring("\27LJ\2\nä\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\20suppressed_dirs\1\0\1\20suppressed_dirs\0\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\nsetup\17auto-session\frequire\0", "config", "auto-session")
+time([[Config for auto-session]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 try_loadstring("\27LJ\2\ne\0\0\4\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\1\2\0004\3\0\0B\1\2\0019\1\3\0'\3\4\0B\1\2\1K\0\1\0\19live_grep_args\19load_extension\nsetup\14telescope\frequire\0", "config", "telescope.nvim")
