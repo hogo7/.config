@@ -235,7 +235,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     endfun
     " }}}
 
-    call <SID>X("Normal", "", "", "")
+    call <SID>X("Normal", "none", "none", "none")
+    call <SID>X("NonText", "none", "none", "none")
 
     " highlight groups
     "call <SID>X("Cursor", "708090", "f0e68c", "")
